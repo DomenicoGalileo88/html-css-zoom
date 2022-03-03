@@ -314,7 +314,7 @@ a:hover {
   background-color: var(--secondary);
   height: 80px;
   display: flex;
-  align-items: center;
+  padding: 0 10px;
 }
 
 #site_footer .container_lg {
