@@ -29,13 +29,29 @@ a {
 a:hover {
   cursor: pointer;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* #endregion Common */
 
 /* #region Utility */
 
+.flex {
+  display: flex;
+}
+
 .f_size_2 {
   font-size: 2.2rem;
+}
+
+.f_size_25px{
+    font-size: 25px;
+}
+
+.f_size_10px{
+    font-size: 10px;
 }
 
 .text_right {
@@ -239,54 +255,83 @@ a:hover {
 /*  #endregion Utility */
 
 /* #region Header */
-#site_header .container_lg{
-    display: flex;
-    justify-content: flex-end;
-} 
-
-#site_header .icon_header{
-    background-color: var(--secondary);
-    padding: 10px;
-    margin: 10px 10px 0 0;
-    border-radius: 0.5rem;
+#site_header .container_lg {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#site_header .rotate{
-    transform: rotate(45deg);
+#site_header .icon_header {
+  background-color: var(--secondary);
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  border-radius: 0.5rem;
+}
+
+#site_header .rotate {
+  transform: rotate(45deg);
 }
 
 /* #endregion Header */
 
 /* #region Main */
 
-
-#site_main .col{
-    width: calc(100% / 7 - 5px);
-    height: 110px;
-    background-image: url('https://picsum.photos/300/200');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+#site_main .col {
+  width: calc(100% / 7 - 5px);
+  height: 110px;
+  background-image: url("https://picsum.photos/300/200");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-#site_main .microphone{
-    background-color: var(--secondary);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 5px;
-    font-size: 12px;
+#site_main .microphone {
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 12px;
 }
 
-#site_main .row{
-    display: flex;
-    column-gap: 5px;
-    row-gap: 15px;
-    flex-wrap: wrap;
+#site_main .row {
+  display: flex;
+  column-gap: 5px;
+  row-gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* #endregion Main */
 
 /* #region Footer */
+
+#site_footer {
+  background-color: var(--secondary);
+  height: 80px;
+  background-color: var(--secondary);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* left menu */
+
+#site_footer ul {
+  list-style: none;
+  display: flex;
+  column-gap: 1rem;
+}
+
+#site_footer ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  row-gap: 0.5rem;
+}
+
+#site_footer span{
+    font-size: 15px;
+}
 
 /* #endregion Footer */
