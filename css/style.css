@@ -275,6 +275,10 @@ a:hover {
 
 /* #region Main */
 
+#site_main{
+    height: 100vh;
+}
+
 #site_main .col {
   width: calc(100% / 7 - 5px);
   height: 110px;
@@ -313,7 +317,10 @@ a:hover {
   align-items: center;
 }
 
-/* left menu */
+#site_footer .container_lg{
+    display: flex;
+    justify-content: space-between;
+}
 
 #site_footer ul {
   list-style: none;
@@ -331,7 +338,18 @@ a:hover {
 }
 
 #site_footer span{
-    font-size: 15px;
+    font-size: 12px;
+}
+
+#site_footer .shere_screen{
+    color: var(--shere);
+}
+
+#site_footer .right_menu{
+    background-color: var(--secondary);
+    color: var(--end);
+    padding: 10px;
+    font-size: 20px;
 }
 
 /* #endregion Footer */
