@@ -1,0 +1,292 @@
+/* Variables */
+
+:root {
+  --primary: rgba(0, 0, 0, 1);
+  --secondary: rgba(74, 74, 74, 0.658);
+  --shere: rgba(75, 200, 0, 1);
+  --end: rgba(211, 29, 7, 1);
+  --light: rgba(255, 255, 255, 1);
+}
+
+/* #region Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1440px;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+a {
+  color: var(--black);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* #endregion Common */
+
+/* #region Utility */
+
+.f_size_2 {
+  font-size: 2.2rem;
+}
+
+.text_right {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.regular {
+  font-weight: 600;
+}
+
+/* Spaces */
+
+.pos_absolute {
+  position: absolute;
+}
+
+.pos_relative {
+  position: relative;
+}
+
+.m_0auto {
+  margin: 0 auto;
+}
+
+.m_30 {
+  margin-top: 30px;
+}
+
+.p_tot_1 {
+  padding: 1rem;
+}
+
+.p_tot_2 {
+  padding: 2rem;
+}
+
+.pb_1 {
+  padding-bottom: 1rem;
+}
+
+.pb_2 {
+  padding-bottom: 2rem;
+}
+
+.pb_3 {
+  padding-bottom: 3rem;
+}
+
+.pl_3 {
+  padding: 1rem 3rem;
+}
+
+.m_2 {
+  margin: 2rem;
+}
+
+.mt_1 {
+  margin-top: 1rem;
+}
+
+.mt_2 {
+  margin-top: 2rem;
+}
+
+.mt_3 {
+  margin-top: 3rem;
+}
+
+.mr_3 {
+  margin-right: 3rem;
+}
+
+.my_2 {
+  margin: 2rem 0;
+}
+
+.my_3 {
+  margin: 3rem 0;
+}
+
+.mb_1 {
+  margin-bottom: 1rem;
+}
+
+.mr_35 {
+  margin-right: 35px;
+}
+
+.bor_1 {
+  border: 1px solid black;
+}
+
+.bor_b_1 {
+  border-bottom: 1px solid black;
+}
+
+/* GRID */
+.container_lg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container_md {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.container_sm {
+  width: 70%;
+  max-width: 1008px;
+  margin: 0 auto;
+}
+
+.container_link {
+  width: 30%;
+  max-width: 432px;
+}
+
+.row {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class^="col_"] {
+  /* Tutte le classi che all'interno hanno col-, avtranno float:left */
+  float: left;
+}
+
+.col_100 {
+  width: 100%;
+}
+
+.col_70 {
+  width: 70%;
+}
+
+.col_60 {
+  width: 60%;
+}
+
+.col_50 {
+  width: 50%;
+}
+
+.col_40 {
+  width: 40%;
+}
+
+.col_40_business {
+  width: 40%;
+  height: 455px;
+}
+
+.col_33 {
+  width: 33.33%;
+}
+
+.col_33_piano {
+  width: 31.1%;
+  height: 1100px;
+}
+
+.col_30 {
+  width: 30%;
+}
+
+.col_30_business {
+  width: 30%;
+  height: 455px;
+}
+
+.col_20 {
+  width: 20%;
+}
+
+/* Button */
+
+.btn {
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+/*  #endregion Utility */
+
+/* #region Header */
+#site_header .container_lg{
+    display: flex;
+    justify-content: flex-end;
+} 
+
+#site_header .icon_header{
+    background-color: var(--secondary);
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    border-radius: 0.5rem;
+}
+
+#site_header .rotate{
+    transform: rotate(45deg);
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+
+#site_main .col{
+    width: calc(100% / 7 - 5px);
+    height: 110px;
+    background-image: url('https://picsum.photos/300/200');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#site_main .microphone{
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#site_main .row{
+    display: flex;
+    column-gap: 5px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+
+/* #endregion Footer */
