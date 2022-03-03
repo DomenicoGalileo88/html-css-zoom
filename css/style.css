@@ -281,7 +281,7 @@ a:hover {
 
 #site_main .col {
   width: calc(100% / 7 - 5px);
-  height: 150px;
+  height: 170px;
   background-image: url("https://picsum.photos/300/200");
   background-size: cover;
   background-position: center;
