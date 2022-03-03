@@ -168,7 +168,7 @@ a:hover {
 }
 
 .container_md {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -281,7 +281,7 @@ a:hover {
 
 #site_main .col {
   width: calc(100% / 7 - 5px);
-  height: 110px;
+  height: 150px;
   background-image: url("https://picsum.photos/300/200");
   background-size: cover;
   background-position: center;
