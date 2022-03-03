@@ -46,12 +46,12 @@ a:hover {
   font-size: 2.2rem;
 }
 
-.f_size_25px{
-    font-size: 25px;
+.f_size_25px {
+  font-size: 25px;
 }
 
-.f_size_10px{
-    font-size: 10px;
+.f_size_10px {
+  font-size: 10px;
 }
 
 .text_right {
@@ -275,8 +275,8 @@ a:hover {
 
 /* #region Main */
 
-#site_main{
-    height: 100vh;
+#site_main {
+  height: calc(100vh - 80px - 47px);
 }
 
 #site_main .col {
@@ -317,9 +317,10 @@ a:hover {
   align-items: center;
 }
 
-#site_footer .container_lg{
-    display: flex;
-    justify-content: space-between;
+#site_footer .container_lg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #site_footer ul {
@@ -337,19 +338,22 @@ a:hover {
   row-gap: 0.5rem;
 }
 
-#site_footer span{
-    font-size: 12px;
+#site_footer span {
+  font-size: 12px;
 }
 
-#site_footer .shere_screen{
-    color: var(--shere);
+#site_footer .shere_screen {
+  color: var(--shere);
 }
 
-#site_footer .right_menu{
-    background-color: var(--secondary);
-    color: var(--end);
-    padding: 10px;
-    font-size: 20px;
+#site_footer .right_menu {
+  height: 80px;
+  background-color: var(--secondary);
+  color: var(--end);
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
 /* #endregion Footer */
