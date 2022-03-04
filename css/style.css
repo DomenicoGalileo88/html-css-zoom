@@ -31,8 +31,10 @@ a:hover {
   cursor: pointer;
 }
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 /* #endregion Common */
@@ -257,10 +259,6 @@ a:hover {
 
 /* #region Header */
 
-#site_header{
-    height: 8vh;
-}
-
 #site_header .container_lg {
   display: flex;
   justify-content: flex-end;
@@ -281,13 +279,9 @@ a:hover {
 
 /* #region Main */
 
-#site_main {
-  height: calc(100vh - 13vh);
-}
-
 #site_main .col {
   width: calc(100% / 7 - 5px);
-  height: 170px;
+  height: 150px;
   background-image: url("https://picsum.photos/300/200");
   background-size: cover;
   background-position: center;
@@ -316,8 +310,8 @@ a:hover {
 
 #site_footer {
   background-color: var(--secondary);
-  height: 7vh;
   display: flex;
+  height: 100px;
 }
 
 #site_footer .container_lg {
